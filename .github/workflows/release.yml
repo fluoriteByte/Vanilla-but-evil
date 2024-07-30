@@ -44,7 +44,6 @@ jobs:
       id-token: write # Additional permissions for the persistence of the attestations
 
     steps:
-      - name:
       - name: Checkout
         uses: actions/checkout@v4
         with:
