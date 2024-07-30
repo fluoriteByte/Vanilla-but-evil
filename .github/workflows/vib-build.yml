@@ -191,4 +191,4 @@ jobs:
       with:
         subject-name: ${{ env.IMAGE_URL }}
         subject-digest: ${{ steps.push.outputs.digest }}
-        push-to-registry: false
+        push-to-registry: true
