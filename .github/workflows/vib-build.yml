@@ -190,6 +190,6 @@ jobs:
       id: attest
       if: ${{ github.event_name != 'pull_request' }}
       with:
-        subject-name: docker.io/fluoritebyte/vanillaos-very-unofficial-mirror
+        subject-name: quay.io/fluoritebyte/vanillaos-mirror-unofficial
         subject-digest: ${{ steps.push.outputs.digest }}
         push-to-registry: true
