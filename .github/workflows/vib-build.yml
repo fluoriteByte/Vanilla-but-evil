@@ -175,6 +175,7 @@ jobs:
       id: push
       uses: docker/build-push-action@v6
       with:
+        registry: quay.io
         context: .
         file: Containerfile
         push: ${{ github.event_name != 'pull_request' }}
